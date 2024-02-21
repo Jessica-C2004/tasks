@@ -119,5 +119,11 @@ export function injectPositive(values: number[]): number[] {
         newValues.push(sum);
     } else {
         //negative value in array
+        const beforeNegNum = newValues
+            .slice(0, negIndex)
+            .reduce((currTotal: number, num: number) => currTotal + num, 0);
+        newValues.splice(negIndex + 1, 0, beforeNegNum);
     }
+
+    return newValues;
 }
