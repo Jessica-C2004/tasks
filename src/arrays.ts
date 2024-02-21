@@ -116,6 +116,7 @@ export function injectPositive(values: number[]): number[] {
             (currTotal: number, num: number) => currTotal + num,
             0
         );
+        newValues.push(sum);
     } else {
         //negative value in array
     }
