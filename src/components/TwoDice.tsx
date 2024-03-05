@@ -31,11 +31,9 @@ export function TwoDice(): JSX.Element {
 
     return (
         <div>
-            Two Dice //testByID things
-            <div>
-                <span data-testid="left-die">{leftDie}</span>
-                <span data-testid="right-die">{rightDie}</span>
-            </div>
+            Two Dice
+            <span data-testid="left-die">{leftDie}</span>
+            <span data-testid="right-die">{rightDie}</span>
             <div>
                 Left Die: <span>{leftDie}</span>
                 Right Die: <span>{rightDie}</span>
