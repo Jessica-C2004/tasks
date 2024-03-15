@@ -38,11 +38,11 @@ export function ChangeColor(): JSX.Element {
             <div
                 data-testid="colored-box"
                 style={{
-                    width: "100%",
-                    height: "100px",
+                    width: "50%",
+                    height: "50px",
                     backgroundColor: color,
                     marginTop: "10px",
-                    fontSize: "400%"
+                    fontSize: "150%"
                 }}
             >
                 {color}
